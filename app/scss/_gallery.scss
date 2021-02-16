@@ -1,0 +1,58 @@
+.infoBlock_gallery {
+   padding: 0 0 0 90px;
+
+   @include _960 {
+      margin-left: -69px;
+      margin-top: 73px;
+   }
+   @include _663 {
+      margin-left: -67px;
+   }
+   @include _480 {
+      margin-left: -81px;
+   }
+
+   .swiper-container-pointer-events {
+      padding: 5px 0;
+   }
+   .swiper-button-next:after,
+   .swiper-container-rtl .swiper-button-prev:after {
+      content: "";
+   }
+
+   .swiper-button-prev:after,
+   .swiper-container-rtl .swiper-button-next:after {
+      content: "";
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev {
+      position: static;
+      display: inline;
+   }
+
+   .swiper-container btn {
+      padding: 50px;
+   }
+
+   .nav {
+      margin-top: 19px;
+      @include _960 {
+         height: 95px;
+      }
+   }
+
+   .btn__large {
+      @include _760 {
+         min-width: 80px;
+      }
+   }
+   .swiper-button-prev .btn__large {
+      margin-right: 17px;
+   }
+   @include _960 {
+      .swiper-button-prev .btn__large {
+         margin-right: 20px;
+      }
+   }
+}
